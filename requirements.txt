@@ -1,0 +1,7 @@
+flask
+flask_mail
+flask-mysql
+pandas
+selenium
+bs4
+requests

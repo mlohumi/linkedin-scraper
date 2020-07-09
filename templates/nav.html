@@ -1,0 +1,13 @@
+<div class="col-md-12">
+<!--   <button class="pull-right btn btn-success">Get Database</button>
+  <button class="pull-right btn btn-warning">Mail</button>
+  <button class="pull-right btn btn-primary">Form</button>
+    <button class="pull-right btn btn-danger">Logout</button> -->
+<ul class="nav nav-tabs nav-justified">
+  <li role="presentation"><a href="{{ url_for('form') }}">Search</a></li>
+  <li role="presentation"><a href="{{ url_for('send_mail') }}">Mail</a></li>
+  <li role="presentation"><a href="{{ url_for('list_users') }}">Get Database</a></li>
+  <li role="pres  entation"><a href="{{ url_for('logout') }}">Log Out</a></li>
+</ul>
+<hr>
+</div>

@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block body %}
+  <!-- <h2 class="text-center">Login</h2> -->
+  <!-- <div class="text-danger panel panel-danger"></p></div> -->
+
+  {% if error %}
+  <div class="panel panel-danger">
+  <div class="panel-heading">
+    <h3 class="panel-title"><p class=error><strong>Error:</strong> {{ error }}</h3>
+  </div>
+  <!-- <div class="panel-body">
+    Panel content
+  </div> -->
+</div>
+{% endif %}
+<div class="col-md-5 col-md-offset-3">
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2 class="panel-title" style="font-size: 25px;">Login</h2>
+  </div>
+  <div class="panel-body">
+  <form action="{{ url_for('login') }}" method=post class="col-md-12" role="form">
+  <div class="form-group col-md-8 col-md-offset-2">
+    <label for="exampleInputPassword1">Username:</label><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+    <input type="text" class="form-control" id="" placeholder="UserName"  name=username>
+  </div>
+  <div class="form-group col-md-7 col-md-offset-2">
+    <label for="exampleInputPassword1">Password:</label><span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+    <input type="password" class="form-control" id="" placeholder="Password" name=password>
+  </div>
+  <button type="submit" class="btn btn-primary col-md-4 col-md-offset-3" value=Login >Submit</button>
+    <!-- <dl>
+      <dt>Username:</dt>
+      <dd><input type=text name=username></dd>
+      <dt>Password:</dt>
+      <dd><input type=password name=password></dd>
+      <dd><input type=submit value=Login></dd>
+    </dl> -->
+  </form>
+  </div>
+</div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,71 @@
+<!-- <form method="POST">
+  email or phone:<br>
+  <input type="text" name="email"><br>
+  password:<br>
+  <input type="text" name="pass">
+   search keyword:<br>
+  <input type="text" name="keyword"><br>
+  pageno:<br>
+  <input type="text" name="page">
+  <input type="button" name="submit" value = "submit">
+</form> -->
+{% include 'inc.html' %}
+<body class="container">
+<div class="page-header">
+  <h1 class="text-primary">Extract Info <small>  get the lead!</small></h1>
+</div>
+{% include 'nav.html' %}
+<script type="text/javascript">
+       $(function() {
+        $('ul li').click(function() {
+           $('ul li').removeClass();
+           $($(this)).addClass('active');
+        });
+     });
+</script>
+<div class="col-md-8 col-md-offset-2">
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2 class="panel-title" style="font-size: 25px;">Extract Info</h2>
+  </div>
+  <div class="panel-body">
+    <form method=post class="col-md-12" role="form">
+  <div class="form-group col-md-10 col-md-offset-0">
+    <label for="exampleInputPassword1">Email:</label>
+    <input type="email" class="form-control" id="" placeholder="Email"  name="mail">
+  </div>
+  <div class="form-group col-md-10 col-md-offset-0">
+    <label for="exampleInputPassword1">Password:</label>
+    <input type="password" class="form-control" id="" placeholder="Password"  name="pasw">
+  </div>
+  <div class="form-group col-md-10 col-md-offset-0">
+    <label for="exampleInputPassword1">Key:</label>
+    <input type="text" class="form-control" id="" placeholder="Key"  name="key">
+  </div>
+  <div class="form-group col-md-10 col-md-offset-0">
+    <label for="exampleInputPassword1">Number:</label>
+    <input type="text" class="form-control" id="" placeholder="Number"  name="num">
+  </div>
+  <button type="submit" class="btn btn-primary col-md-4 col-md-offset-3">Submit</button>
+    <!-- <dl>
+      <dt>Username:</dt>
+      <dd><input type=text name=username></dd>
+      <dt>Password:</dt>
+      <dd><input type=password name=password></dd>
+      <dd><input type=submit value=Login></dd>
+    </dl> -->
+  </form>
+    </div>
+</div>
+</div>
+
+</body>
+</html>
+  <!-- 
+<form method="POST">
+    <input name="mail">
+    <input name="pasw">
+    <input name="key">
+    <input name="num">
+    <input type="submit">
+</form> -->

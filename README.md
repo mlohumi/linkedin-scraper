@@ -1,6 +1,6 @@
 # Linkedin Scraper - Scrape LinkedIn profiles
 
-This is a LinkedIn scraper to abstract data such as Name, Email, Contact Number etc of individuals and companies from LinkedIn. It has a rich UI to type in the keyword you would like to search in LinkedIN, the data will be collected and stored in the database. You can send e-mails to selected profiles from the frontend itself.
+This is a LinkedIn scraper to abstract data such as Name, Email, Contact Number etc of individuals and companies from LinkedIn. It has a rich UI to type in the keyword you would like to search in LinkedIn, the data will be collected and stored in the database. You can send e-mails to selected profiles from the frontend itself.
 
 ## Getting Started
 

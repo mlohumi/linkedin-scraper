@@ -14,7 +14,7 @@ Download the chrome driver corresponding to your chrome version and os from
 https://chromedriver.chromium.org/downloads
 ```
 
-For those who are using latest version of MacOS - Catalina, Locate the chrome driver and execute the following command on terminal
+For those who are using latest version of MacOS - Catalina, locate the chrome driver and execute the following command on terminal
 
 ```
 xattr -d com.apple.quarantine chromedriver
